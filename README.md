@@ -6,7 +6,7 @@ Date: January 23 2024
 
 input/data - the raw data set used for the paper can be found here.
 
-input/ llm - text file showcasing use of ChatGpt for additional help.
+input/ llm - **Statement on LLM usage: Aspects of the code were written with the help of the autocomplete tool, ChatGPT. Analysis of data, simulation and conduct of tests, and additional coding support were assisted with the help of ChatGPT and the most relevant chat history related to paper can be found in inputs/llms/usage.txt.**
 
 output/ data - cleaned version of the data set used predominantly for the data analysis.
 
