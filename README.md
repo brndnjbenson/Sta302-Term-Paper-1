@@ -1,8 +1,8 @@
-#The Donaldson Paper on Social Housing and Afforable Housing units in Toronto#
+# The Donaldson Paper on Social Housing and Afforable Housing units in Toronto
 
-###This repository presents the data anaysis on Toronto's social housing and affordable housing units in 2020 to 2022.###
+## This repository presents the data anaysis on Toronto's social housing and affordable housing units in 2020 to 2022.
 
-#####Author name: Brandon Benson#####
+##### Author name: Brandon Benson 
 
 Date: January 23 2024
 
