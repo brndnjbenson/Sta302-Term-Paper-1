@@ -1,5 +1,7 @@
 This repository presents the data anaysis on Toronto's social housing and affordable housing units in 2020 to 2022.
+
 Author name: Brandon Benson
+
 Date: January 23 2024
 
 input/data - the raw data set used for the paper can be found here.
