@@ -1,0 +1,52 @@
+---
+title: "Toronto's Social and Affordable Housing raw data"
+author: "Brandon Benson"
+format: html
+editor: visual
+---
+  
+```{r}
+#### Preamble ####
+# Purpose: Download the raw data set regarding Toronto's Social and Affordable housing.
+# Author: Brandon Benson
+# Date: January 25 2024
+# Contact: brandon.benson@mail.utoronto.ca
+# Pre-requisites: Install opendatatoronto package.
+```
+
+#### Workspace setup ####
+install.packages("deplyr")
+
+library(opendatatoronto)
+library(tidyverse)
+library(deplyr)
+library(readr)
+```
+
+
+
+```{r}
+#### Download data ####
+
+# Code extracted from Open Data Toronto website
+
+# get package
+package <- show_package("active-affordable-and-social-housing-units")
+package
+
+# get all resources for this package
+resources <- list_package_resources("active-affordable-and-social-housing-units")
+
+# identify datastore resources; by default, Toronto Open Data sets datastore resource format to CSV for non-geospatial and GeoJSON for geospatial resources
+datastore_resources <- filter(resources, tolower(format) %in% c('csv', 'geojson'))
+
+# load the first datastore resource as a sample
+data <- filter(datastore_resources, row_number()==1) %>% get_resource()
+
+data
+
+#### Save data ####
+write_csv(data, "raw_housing_data.csv") 
+
+```
+
