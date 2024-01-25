@@ -1,5 +1,5 @@
 ---
-title: "STA302_Term_Paper_1"
+title: "Simulation on Analysis on Toronto units of housing."
 author: "Brandon Benson"
 format: html
 editor: visual
